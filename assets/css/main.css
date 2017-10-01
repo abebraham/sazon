@@ -1279,9 +1279,10 @@
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
+			/*margin: 0 auto;*/
 			margin-bottom: 0;
 			list-style: none;
-			padding-left: 0;
+			padding: 0;
 			border: solid 1px #ffffff;
 			border-radius: 4px;
 		}
@@ -1289,6 +1290,7 @@
 			#header nav ul li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
+				margin-right: 1em;
 			}
 
 				#header nav ul li:first-child {
@@ -1307,12 +1309,11 @@
 					border-bottom: 0;
 				}
 
-					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
-					}
-
-					#header nav ul li a:active {
-						background-color: rgba(255, 255, 255, 0.175);
+					#header nav ul li a:hover, 
+					#header nav ul li a:active,
+					#header nav ul li a:focus {
+						/*background-color: rgba(255, 255, 255, 0.175);*/
+						font-weight: bold;
 					}
 
 		#header nav.use-middle:after {
